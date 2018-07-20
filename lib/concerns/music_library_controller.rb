@@ -77,7 +77,7 @@ class MusicLibraryController
      #choice is the song object referenced by the user's input selection from the numbered list of alphabetized songs.
      choice = list[input - 1]
      #the input cannot be nil, and must be a number less than the total number of songs in the library's list.
-     if input != nil && (input <= list.size)
+     if input != nil && (input <= list.size) && (input >= 1)
      puts "Playing #{choice.name} by #{choice.artist.name}"
     end
    end
