@@ -72,7 +72,9 @@ class MusicLibraryController
    def play_song
      puts "Which song number would you like to play?"
      list = Song.all.sort_by {|s| s.name}
+     #input is the user's song number selection
      input = gets.chomp.to_i
+     #choice is the song object referenced by the user's input selection from the numbered list of alphabetized songs.
      choice = list[input - 1]
      if input != nil && (input <= list.size)
      puts "Playing #{choice.name} by #{choice.artist.name}"
