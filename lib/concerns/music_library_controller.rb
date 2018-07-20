@@ -78,7 +78,7 @@ class MusicLibraryController
        song = Song.all[gets.to_i - 1]
        puts "Playing #{song.name} by #{song.name}"
     #  puts "Playing #{choice.name} by #{choice.artist.name}"
+    end
    end
-   end
-
+end
 end
