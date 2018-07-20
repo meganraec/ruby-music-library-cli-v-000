@@ -73,7 +73,7 @@ class MusicLibraryController
      puts "Which song number would you like to play?"
      list = Song.all.sort_by {|s| s.name}
      choice = list[gets.to_i - 1]
-     if choice != nil
+     if choice != nil && choice < (list.count + 1)
      puts "Playing #{choice.name} by #{choice.artist.name}"
     end
    end
