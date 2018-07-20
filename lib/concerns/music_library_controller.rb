@@ -74,7 +74,7 @@ class MusicLibraryController
     #  list = list_songs.to_a
     #  song_number = gets.chomp.to_i - 1
     #  choice = list[song_number]
-     if choice != nil
+     if song != nil
        song = Song.all[gets.to_i - 1]
        puts "Playing #{song.name} by #{song.name}"
     #  puts "Playing #{choice.name} by #{choice.artist.name}"
